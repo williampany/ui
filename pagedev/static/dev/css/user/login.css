@@ -1,0 +1,9 @@
+body{background: url("../../img/user/login_bg.jpg") no-repeat scroll center 0px;}
+.loginWrap{max-width: 640px;top:0px;left: 0px;margin: 0px auto;display: block;}
+.loginWrap .userIcon{background: url("../../img/user/user_icon.png") no-repeat scroll center bottom;height: 112px;background-size: 72px 72px;display: block;margin-bottom: 22px;}
+.loginBox{background: url("../../img/user/login_wrap.png") no-repeat scroll center center;padding: 7.5px 12.5px;overflow: hidden;}
+.lableWrap{position: relative;border:1px solid #fff;border-radius: 20px;height: 40px;margin-bottom: 17.5px;}
+.lableWrap .userName{background: url("../../img/user/user_name.png") no-repeat scroll center center;width: 22px;height: 28px;position: absolute;top:5px;left: 26px;background-size: 22px 28px;}
+.lableWrap .pwd{background: url("../../img/user/pwd.png") no-repeat scroll center center;width: 22px;height: 28px;position: absolute;top:5px;left: 26px;background-size: 22px 28px;}
+.lableWrap input{background: transparent;border:none;color: #fff;position: absolute;left: 80px;line-height: 40px;}
+.submitBtn{line-height: 35px;height: 35px;color: #fff;text-align: center;background-color: #ffcc19;border-radius: 17.5px;cursor: pointer;}
