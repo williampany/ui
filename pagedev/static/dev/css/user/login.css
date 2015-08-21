@@ -7,3 +7,8 @@ body{background: url("../../img/user/login_bg.jpg") no-repeat scroll center 0px;
 .lableWrap .pwd{background: url("../../img/user/pwd.png") no-repeat scroll center center;width: 22px;height: 28px;position: absolute;top:5px;left: 26px;background-size: 22px 28px;}
 .lableWrap input{background: transparent;border:none;color: #fff;position: absolute;left: 80px;line-height: 40px;}
 .submitBtn{line-height: 35px;height: 35px;color: #fff;text-align: center;background-color: #ffcc19;border-radius: 17.5px;cursor: pointer;}
+
+.loginTheme .loginItem{width: 181px;height: 181px;background: url("../../img/user/logo_bg.png") no-repeat scroll center center;background-size: 181px 181px;margin: 20px auto;position: relative;}
+.loginTheme .logoWrap{width: 115px;height: 115px;position: absolute;left: 50%;margin-left: -57.5px;margin-top: -57.5px;top: 50%;}
+.loginTheme .logoWrap img{width: 100%;}
+.loginTheme .company_title{position: absolute;text-align: center;color: #fff;font-size: 16px;width: 100%;bottom: -20px;}
