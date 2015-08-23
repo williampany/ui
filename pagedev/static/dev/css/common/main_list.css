@@ -8,3 +8,5 @@
 .opinionItem .dataTable tr{border-top: 1px solid #e9e9e9;line-height: 28px;}
 .clum1{padding-right: 21px;width: 120px;}
 .dataTable em{color: #e90f0f;}
+.up,.down{padding-right: 12px;background: url("../../img/common/up_icon.png") no-repeat scroll right center;display: inline-block;background-size: 8px 12px;}
+.down{background-image: url("../../img/common/down_icon.png");}

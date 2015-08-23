@@ -7,6 +7,6 @@ update:;*/
 /*导入common.css开始*/
 @import url("../common/common.css");
 /*导入common.css结束*/
-/*导入login.css开始*/
-@import url("../flow/main_list.css");
-/*导入login.css结束*/
+/*导入公共的main_list.css开始*/
+@import url("../common/main_list.css");
+/*导入公共的main_list.css结束*/
