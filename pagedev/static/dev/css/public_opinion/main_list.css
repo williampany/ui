@@ -1,0 +1,10 @@
+.mainListWrap{}
+.opinionList{padding-bottom: 39px;}
+.opinionList .opinionItem{border-bottom: 1px solid #b6b6b7;padding: 10px;color: #8c8c8c;padding-bottom: 0px;position: relative;}
+.opinionList .opinionItem .itemLink{position:absolute;background: url("../../img/common/link_r.png") scroll center center;width: 13.5px;height: 29px;top:50%;right: 10px;margin-top: -14.5px;background-size: 13.5px 29px; }
+.opinionTitle{font-size: 16px;margin-bottom: 7px;}
+.opinionTitle .name{border-left: 3px solid #2abbea;line-height: 16px;padding-left: 5px;display: inline-block;color: #444;}
+.opinionList .opinionItem .dataTable{width: 100%;}
+.opinionItem .dataTable tr{border-top: 1px solid #e9e9e9;line-height: 28px;}
+.clum1{padding-right: 21px;width: 80px;}
+.dataTable em{color: #e90f0f;}
