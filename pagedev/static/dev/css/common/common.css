@@ -12,3 +12,17 @@
 .b_nav .tab_item:after{content: ""; background-color: #dadada;height: 40px;width: 1px;position: absolute;right: 0px;top: 0px;}
 .b_nav .tab_item.loginOut:after{display: none;}
 /*底部导航部分结束*/
+
+/*tab部分开始*/
+.tabWrap{}
+.tabWrap .tabNav{zoom:1;}
+.tabWrap .tabNav:after{clear:both; display:block; content:"."; height:0; visibility:hidden;}
+.tabWrap .tabNav{height: 30px;line-height: 30px;color: #5b5959;font-size: 14px;background-color: #ececec;}
+.tabWrap .tabNav .tabTitle{text-align: center;float: left;position: relative;cursor: pointer;}
+.tabWrap .tabNav .tabTitle:after{content: ""; background-color: #dadada;height: 30px;width: 1px;position: absolute;right: 0px;top: 0px;}
+.tabWrap .tabNav .tabTitle:last-child:after{display: none;}
+.tabWrap .tabNav .tabTitle.active{background-color: #d2d2d2;}
+.tabWrap .tabContWrap{}
+.tabWrap .tabContWrap .tabCont{display: none;}
+.tabWrap .tabContWrap .tabCont.active{display: block;}
+/*tab部分结束*/
