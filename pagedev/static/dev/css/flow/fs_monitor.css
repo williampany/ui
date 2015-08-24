@@ -1,0 +1,14 @@
+.fs_monitorWrap{}
+.monitorTitles .tabTitle{width: 33.33%;height: 40px;}
+.tabWrap .monitorTitles .tabTitle{line-height: 40px;}
+.tabWrap .monitorTitles{height: 40px;}
+.opinionItem{padding:10px 10px 0px;}
+.dataTable{width: 100%;}
+.tabWrap .monitorTitles .dateTab{line-height: 15px;display: inline-block;padding-top: 5px;}
+.fs_monitorWrap .pageTitle{line-height: 30px;height: 30px;font-size: 16px;color: #000;text-align: center;}
+.qushiTabs .tabTitle{width: 50%;}
+.b_table{width: 100%;border-collapse:collapse;color: #444444;}
+.b_tableWrap{box-sizing:border-box;padding: 10px 10px;}
+.b_table td{text-align: center;border:1px solid #c0c0c0;line-height: 22px;}
+.b_table .b_table_th{color: #8c8c8c;}
+.tabWrap{border:1px solid #ccc;}

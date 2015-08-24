@@ -26,3 +26,21 @@
 .tabWrap .tabContWrap .tabCont{display: none;}
 .tabWrap .tabContWrap .tabCont.active{display: block;}
 /*tab部分结束*/
+
+/*漏斗转换部分开始*/
+.funnel_flowWrap{background-color: #f5f5f5;}
+.funnel_name{text-align: center;font-size: 16px;padding: 10px 0px;}
+.funnel_flowWrap{padding: 0px 10%;}
+.funnel_flowWrap .funnel_title{width: 100%;color: #929292;margin-bottom: 5px;}
+.funnel_flowWrap .funnel_title td{text-align: center;}
+.levelWrap{position: relative;margin-bottom: 5px;}
+.levelName{position: absolute;display: none;}
+.levelOne{background:url("../../img/common/level1.png")no-repeat scroll center center;background-size: 100% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
+.levelOne .levelTable{width: 100%;margin: 0px auto;}
+.levelOne .levelTable .clum1{width: 13%;}
+.levelTwo .levelTable{width: 88%;margin: 0px auto;}
+.levelThree .levelTable{width: 77%;margin: 0px auto;}
+.levelTable td{text-align: center;}
+.levelTwo{background:url("../../img/common/level2.png")no-repeat scroll center center;background-size: 88% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
+.levelThree{background:url("../../img/common/level3.png")no-repeat scroll center center;background-size: 77% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
+/*漏斗转换部分结束*/
