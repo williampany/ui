@@ -33,7 +33,7 @@
 .funnel_flowWrap{padding: 0px 10%;}
 .funnel_flowWrap .funnel_title{width: 100%;color: #929292;margin-bottom: 5px;}
 .funnel_flowWrap .funnel_title td{text-align: center;}
-.levelWrap{position: relative;margin-bottom: 5px;}
+.levelWrap{position: relative;margin-bottom: 3px;}
 .levelName{position: absolute;display: none;}
 .levelOne{background:url("../../img/common/level1.png")no-repeat scroll center center;background-size: 100% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
 .levelOne .levelTable{width: 100%;margin: 0px auto;}

@@ -149,7 +149,7 @@
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont active">
-				
+				<div id="main" style="height:160px"></div>
 			</div>
 		</div>
 	</div>
@@ -170,5 +170,55 @@
 	</div>
 	<!-- 底部导航结束 -->
 </div>
+<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" >
+ // 路径配置
+require.config({
+    paths: {
+        echarts: 'http://echarts.baidu.com/build/dist'
+    }
+});
+// 使用
+require(
+    [
+        'echarts',
+        'echarts/chart/bar' // 使用柱状图就加载bar模块，按需加载
+    ],
+    function (ec) {
+        // 基于准备好的dom，初始化echarts图表
+        var myChart = ec.init(document.getElementById('main')); 
+        
+        var option = {
+            tooltip: {
+                show: true
+            },
+            legend: {
+                data:['pv']
+            },
+            xAxis : [
+                {
+                    type : 'category',
+                    data : ["2015/06/03","2015/06/04","2015/06/04","2015/06/05","2015/06/06","2015/06/07","2015/06/08","2015/06/09"]
+                }
+            ],
+            yAxis : [
+                {
+                    type : 'value'
+                }
+            ],
+            series : [
+                {
+                    "name":"pv",
+                    "type":"bar",
+                    "data":[30000, 40000, 50000, 38000, 37000, 48000,36000,35000]
+                }
+            ]
+        };
+
+        // 为echarts对象加载数据 
+        myChart.setOption(option); 
+    }
+);
+</script>
 </body>
 </html>
