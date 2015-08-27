@@ -8,5 +8,5 @@ update:;*/
 .tabWrap .tabNav .tabTitle{line-height: 40px;height: 40px;}
 .tabWrap .monitorTitles .dateTab{display: inline-block;line-height:15px;padding-top:5px;}
 .area_tableData{width: 100%;}
-.area_tableData td{}
+.area_tableData td{border:1px solid #ccc;}
 .userLevelLink{margin-bottom: 50px;}

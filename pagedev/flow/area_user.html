@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>用户地域等级销量监控</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/flow/area_flow_style.css">
+</head>
+<body>
+<div class="area_flowWrap">
+	<!-- 头部开始 -->
+	<div class="header">
+		用户地域等级销量监控
+	</div>
+	<!-- 头部结束 -->
+	<!-- 标题开始 -->
+	<h1 class="pageTitle">用户地域销量监控</h1>
+	<!-- 标题结束 -->
+	<!-- 旗舰店运营概况数据开始 -->
+	<div class="tabWrap">
+		<ul class="tabNav monitorTitles">
+			<li class="tabTitle active">
+				<span class="dateTab">
+					12周<br/>
+					06/10-06/17
+				</span>
+			</li>
+			<li class="tabTitle ">5月</li>
+			<li class="tabTitle">筛选</li>
+		</ul>
+		<div class="tabContWrap">
+			<div class="tabCont active">
+				<!-- 旗舰店运营概况开始 -->
+				<div class="opinionItem">
+					<a href="#" class="itemLink"></a>
+					<div class="opinionTitle">
+						<span class="name">
+							销量:200,00 环比上周:<span class="up">2%</span>
+						</span>
+					</div>
+					<div id="pieChart" style="height:400px;">
+						
+					</div>
+					<table class="area_tableData">
+						<tr>
+							<td><span>地区</span></td>
+							<td><span>总销量</span></td>
+							<td><span>占比</span></td>
+							<td><span>K3销量</span></td>
+							<td><span>K3 note销量</span></td>
+						</tr>
+						<tr>
+							<td><span>北京</span></td>
+							<td><span>80</span></td>
+							<td><span>9%</span></td>
+							<td><span>134,000</span></td>
+							<td><span>12,394</span></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+			<div class="tabCont">
+			</div>
+			<div class="tabCont">
+			</div>
+		</div>
+	</div>
+	<!-- 旗舰店运营概况数据结束 -->
+	<!-- 底部导航开始 -->
+	<div class="b_nav">
+		<ul class="clearfix">
+			<li class="tab_item active">
+				流量销量分析
+			</li>
+			<li class="tab_item">
+				舆情监控分析
+			</li>
+			<li class="tab_item loginOut">
+				退出
+			</li>
+		</ul>
+	</div>
+	<!-- 底部导航结束 -->
+</div>
+<script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" >
+ // 路径配置
+require.config({
+    paths: {
+        echarts: 'http://echarts.baidu.com/build/dist'
+    }
+});
+// 使用
+require(
+    [
+        'echarts',
+        'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+        'echarts/chart/map',
+        'echarts/chart/pie'
+    ],
+    function (ec) {
+        // 基于准备好的dom，初始化echarts图表
+        var pieChart = ec.init(document.getElementById('pieChart')); 
+        
+        var option = {
+		    title : {
+		        text: '某站点用户访问来源',
+		        subtext: '纯属虚构',
+		        x:'center'
+		    },
+		    tooltip : {
+		        trigger: 'item',
+		        formatter: "{a} <br/>{b} : {c} ({d}%)"
+		    },
+		    legend: {
+		        orient : 'vertical',
+		        x : 'left',
+		        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
+		    },
+		    toolbox: {
+		        show : true,
+		        feature : {
+		            mark : {show: true},
+		            dataView : {show: true, readOnly: false},
+		            magicType : {
+		                show: true, 
+		                type: ['pie', 'funnel'],
+		                option: {
+		                    funnel: {
+		                        x: '25%',
+		                        width: '50%',
+		                        funnelAlign: 'left',
+		                        max: 1548
+		                    }
+		                }
+		            },
+		            restore : {show: true},
+		            saveAsImage : {show: true}
+		        }
+		    },
+		    calculable : true,
+		    series : [
+		        {
+		            name:'访问来源',
+		            type:'pie',
+		            radius : '55%',
+		            center: ['50%', '60%'],
+		            data:[
+		                {value:335, name:'直接访问'},
+		                {value:310, name:'邮件营销'},
+		                {value:234, name:'联盟广告'},
+		                {value:135, name:'视频广告'},
+		                {value:1548, name:'搜索引擎'}
+		            ]
+		        }
+		    ]
+		};
+                    
+        // 为echarts对象加载数据 
+        pieChart.setOption(option);
+    }
+);
+</script>
+</body>
+</html>	

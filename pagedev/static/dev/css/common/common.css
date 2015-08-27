@@ -48,3 +48,4 @@
 .blockLink{border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8d8d8d;line-height: 54px;height: 54px;font-size: 16px;display: block;color: #444444;}
 table{border-collapse:collapse;}
 table td{text-align: center;border:1px solid #ccc;}
+.pageTitle{line-height: 30px;height: 30px;font-size: 16px;color: #000;text-align: center;}
