@@ -44,3 +44,7 @@
 .levelTwo{background:url("../../img/common/level2.png")no-repeat scroll center center;background-size: 88% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
 .levelThree{background:url("../../img/common/level3.png")no-repeat scroll center center;background-size: 77% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
 /*漏斗转换部分结束*/
+
+.blockLink{border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8d8d8d;line-height: 54px;height: 54px;font-size: 16px;display: block;color: #444444;}
+table{border-collapse:collapse;}
+table td{text-align: center;border:1px solid #ccc;}

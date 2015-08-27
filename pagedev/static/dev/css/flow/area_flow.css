@@ -1,0 +1,12 @@
+/*description:地域流量监控样式;
+author:vicshang(2015-8-27 21:57:21);
+update:;*/
+.area_flowWrap{}
+.opinionItem{padding: 10px 10px;}
+.monitorTitles .tabTitle{width: 33.33%}
+.tabWrap .tabNav{height: 40px;}
+.tabWrap .tabNav .tabTitle{line-height: 40px;height: 40px;}
+.tabWrap .monitorTitles .dateTab{display: inline-block;line-height:15px;padding-top:5px;}
+.area_tableData{width: 100%;}
+.area_tableData td{}
+.userLevelLink{margin-bottom: 50px;}
