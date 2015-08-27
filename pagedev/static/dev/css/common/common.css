@@ -45,6 +45,13 @@
 .levelThree{background:url("../../img/common/level3.png")no-repeat scroll center center;background-size: 77% 42px;width: 100%;line-height: 42px;height: 42px;color: #fff;}
 /*漏斗转换部分结束*/
 
+.qushiTabs .tabTitle{width: 50%;}
+.flowDetailTitle{font-size: 0.8em;-webkit-transform:scale(0.8);text-align: center;margin:5px 0;}
+.flowDetailTable{width: 100%;}
+.flowDetailTable td{border:1px solid #c0c0c0;text-align: center;}
+.flowDetailTable td span{font-size: 0.8em;-webkit-transform:scale(0.8);display: block;}
+.flowDetailTable{margin-bottom: 25px;}
+
 .blockLink{border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8d8d8d;line-height: 54px;height: 54px;font-size: 16px;display: block;color: #444444;}
 table{border-collapse:collapse;}
 table td{text-align: center;border:1px solid #ccc;}

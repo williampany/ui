@@ -1,5 +1,5 @@
 .mainListWrap{}
-table td{border: none;}
+table td{border: none;text-align: left;}
 .opinionList{padding-bottom: 39px;}
 .opinionList .opinionItem{border-bottom: 1px solid #b6b6b7;padding: 10px;color: #8c8c8c;padding-bottom: 0px;position: relative;}
 .opinionList .opinionItem .itemLink{position:absolute;background: url("../../img/common/link_r.png") scroll center center;width: 13.5px;height: 29px;top:50%;right: 10px;margin-top: -14.5px;background-size: 13.5px 29px; }
@@ -11,3 +11,4 @@ table td{border: none;}
 .dataTable em{color: #e90f0f;}
 .up,.down{padding-right: 12px;background: url("../../img/common/up_icon.png") no-repeat scroll right center;display: inline-block;background-size: 8px 12px;}
 .down{background-image: url("../../img/common/down_icon.png");}
+

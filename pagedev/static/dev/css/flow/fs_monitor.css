@@ -6,7 +6,7 @@
 .dataTable{width: 100%;}
 .tabWrap .monitorTitles .dateTab{line-height: 15px;display: inline-block;padding-top: 5px;}
 
-.qushiTabs .tabTitle{width: 50%;}
+
 .b_table{width: 100%;border-collapse:collapse;color: #444444;}
 .b_table span{font-size: 0.75em;-webkit-transform:scale(0.75);white-space:nowrap;display: block;overflow: hidden;max-width: 60px;margin: 0px auto;}
 .b_tableWrap{box-sizing:border-box;padding: 10px 10px;}
@@ -16,8 +16,3 @@
 .levelTable span{font-size: 0.6em;-webkit-transform:scale(0.6);white-space:nowrap;display: block;overflow: hidden;max-width: 60px;margin: 0px auto;}
 .funnel_flowWrap{padding-bottom: 15px;}
 .tabWrap{padding-bottom: 40px;}
-.flowDetailTitle{font-size: 0.8em;-webkit-transform:scale(0.8);text-align: center;margin:5px 0;}
-.flowDetailTable{width: 100%;}
-.flowDetailTable td{border:1px solid #c0c0c0;text-align: center;}
-.flowDetailTable td span{font-size: 0.8em;-webkit-transform:scale(0.8);display: block;}
-.flowDetailTable{margin-bottom: 25px;}
