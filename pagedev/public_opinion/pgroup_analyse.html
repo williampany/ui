@@ -3,39 +3,25 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
-	<title>乐檬圈子分析</title>
-	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/group_analyse_style.css">
+	<title>竞品圈子对比分析</title>
+	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/pgroup_analyse_style.css">
 </head>
 <body>
 <div class="group_analyseWrap">
 	<!-- 头部开始 -->
 	<div class="header">
-		乐檬圈子分析
+		竞品圈子对比分析
 	</div>
 	<!-- 头部结束 -->
 	<div class="topWrap">
+		<div id="pgroupChart"></div>
 		<table>
 			<tr>
-				<td>粉丝总数:1,000</td>
-				<td>昨日新增:900</td>
-			</tr>
-			<tr>
-				<td>帖子总数:100</td>
-				<td>昨日新增:10</td>
-			</tr>
-		</table>
-		<div id="tieChart"></div>
-		<table>
-			<tr>
-				<td><span>乐檬</span></td>
-				<td><span>新增粉丝</span></td>
-				<td><span>新增帖子</span></td>
+				<td><span>圈子</span></td>
 				<td><span>粉丝总数</span></td>
 				<td><span>帖子总数</span></td>
 			</tr>
 			<tr>
-				<td><span>--</span></td>
-				<td><span>--</span></td>
 				<td><span>--</span></td>
 				<td><span>--</span></td>
 				<td><span>--</span></td>
@@ -50,10 +36,12 @@
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont active">
-				<div id="evaluate7Chart"></div>
+				<div id="evaluate7Chart1"></div>
+				<div id="evaluate7Chart2"></div>
 			</div>
 			<div class="tabCont">
-				<div id="evaluate30Chart"></div>
+				<div id="evaluate30Chart1"></div>
+				<div id="evaluate30Chart2"></div>
 			</div>
 			<div class="tabCont">
 				<table>
@@ -73,21 +61,7 @@
 			</div>
 		</div>
 	</div>
-<!-- 底部导航开始 -->
-	<div class="b_nav">
-		<ul class="clearfix">
-			<li class="tab_item">
-				流量销量分析
-			</li>
-			<li class="tab_item active">
-				舆情监控分析
-			</li>
-			<li class="tab_item loginOut">
-				退出
-			</li>
-		</ul>
-	</div>
-	<!-- 底部导航结束 -->
+	
 </div>
 </body>
 </html>
