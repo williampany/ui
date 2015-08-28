@@ -248,5 +248,24 @@ LM.Core={
 		var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
 		var r = window.location.search.substr(1).match(reg);
 		if (r != null) return unescape(r[2]); return "";
+	},
+	initEchart:function(callback){
+		// 使用
+		require([
+	        'echarts',
+	        'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
+	        'echarts/chart/line',
+	        'echarts/chart/map',
+	        'echarts/chart/pie'
+	    ],function(ec){
+	    	if(typeof callback==="function"){
+	    		callback(ec);
+	    	}
+	    });
 	}
 }
+require.config({
+    paths: {
+        echarts: 'http://echarts.baidu.com/build/dist'
+    }
+});
