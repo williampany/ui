@@ -56,3 +56,11 @@
 table{border-collapse:collapse;}
 table td{text-align: center;border:1px solid #ccc;}
 .pageTitle{line-height: 30px;height: 30px;font-size: 16px;color: #000;text-align: center;}
+
+/*数据表格开始*/
+.b_table{width: 100%;border-collapse:collapse;color: #444444;}
+.b_table span{font-size: 0.75em;-webkit-transform:scale(0.75);white-space:nowrap;display: block;overflow: hidden;max-width: 60px;margin: 0px auto;}
+.b_tableWrap{box-sizing:border-box;padding: 10px 10px;}
+.b_table td{text-align: center;border:1px solid #c0c0c0;line-height: 22px;}
+.b_table .b_table_th{color: #8c8c8c;}
+/*数据表格结束*/
