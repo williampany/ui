@@ -21,42 +21,43 @@
 			<li class="tabTitle">筛选</li>
 		</ul>
 		<div class="tabContWrap">
+			
 			<!-- 最新一天tab内容开始 -->
 			<div class="tabCont active">
-				<table>
-					<tr>
-						<td>乐檬:1,000</td>
-					</tr>
-					<tr>
-						<td>魅蓝:900</td>
-					</tr>
-					<tr>
-						<td>小米:900</td>
-					</tr>
-					<tr>
-						<td>荣耀:900</td>
-					</tr>
-				</table>
-				<table class="dataTable">
-					<tr>
-						<td>乐檬搜索次数</td>
-						<td>魅蓝</td>
-						<td>小米</td>
-						<td>荣耀</td>
-					</tr>
-					<tr>
-						<td>20,000</td>
-						<td>20,000</td>
-						<td>19,000</td>
-						<td>100</td>
-					</tr>
-				</table>
+				<div class="opinionList">
+					<div class="opinionItem">
+						<table class="dataTable">
+							<tr>
+								<td>乐檬:1,000</td>
+							</tr>
+							<tr>
+								<td>魅蓝:900</td>
+							</tr>
+							<tr>
+								<td>小米:900</td>
+							</tr>
+							<tr>
+								<td>荣耀:900</td>
+							</tr>
+						</table>
+						<table class="b_table">
+							<tr>
+								<td>乐檬搜索次数</td>
+								<td>魅蓝</td>
+								<td>小米</td>
+								<td>荣耀</td>
+							</tr>
+							<tr>
+								<td>20,000</td>
+								<td>20,000</td>
+								<td>19,000</td>
+								<td>100</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 			<!-- 最新一天tab内容结束 -->
-			<!-- 筛选tab内容开始 -->
-			<div class="tabCont">
-			</div>
-			<!-- 筛选tab内容结束 -->
 		</div>
 	</div>
 	<!-- 百度分析结束 -->
@@ -65,29 +66,61 @@
 	<div class="tabWrap">
 		<ul class="tabNav trendTab">
 			<li class="tabTitle active">总趋势</li>
-			<li class="tabTitle">PC端</li>
-			<li class="tabTitle">移动端</li>
+			<li class="tabTitle" data-val="pcTrend">PC端</li>
+			<li class="tabTitle" data-val="wapTrend">移动端</li>
 			<li class="tabTitle">明细</li>
 		</ul>
 		<div class="tabContWrap">
 			<!-- 总趋势内容开始 -->
 			<div class="tabCont active">
-				<h2>2015-06-10到2015-06-17竞争指数</h2>
+				<h3 class="flowDetailTitle">2015-06-10到2015-06-17竞争指数</h3>
+				<div id="allTrend" style="height:160px;"></div>
 			</div>
 			<!-- 总趋势内容结束 -->
 			<!-- PC端趋势内容开始 -->
 			<div class="tabCont">
-				<h2>2015-06-10到2015-06-17竞争指数</h2>
+				<h3 class="flowDetailTitle">2015-06-10到2015-06-17竞争指数</h3>
+				<div id="pcTrend" style="height:160px;"></div>
 			</div>
 			<!-- PC端趋势内容结束 -->
 			<!-- 移动端趋势内容开始 -->
 			<div class="tabCont">
-				<h2>2015-06-10到2015-06-17竞争指数</h2>
+				<h3 class="flowDetailTitle">2015-06-10到2015-06-17竞争指数</h3>
+				<div id="wapTrend" style="height:160px;"></div>
 			</div>
 			<!-- 移动端趋势内容结束 -->
 			<!-- 明细内容开始 -->
 			<div class="tabCont">
-				<h2>2015-06-10到2015-06-17竞争指数</h2>
+				<h3 class="flowDetailTitle">2015-06-10到2015-06-17竞争指数</h3>
+				<table class="b_table">
+					<tr>
+						<td><span>序号</span></td>
+						<td><span>日期</span></td>
+						<td><span>乐檬</span></td>
+						<td><span>小米</span></td>
+						<td><span>荣耀</span></td>
+						<td><span>OPPO</span></td>
+						<td><span>vivio</span></td>
+					</tr>
+					<tr>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+					</tr>
+					<tr>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+					</tr>
+				</table>
 			</div>
 			<!-- 明细内容结束 -->
 		</div>
@@ -108,6 +141,11 @@
 		</ul>
 	</div>
 	<!-- 底部导航结束 -->
+	<script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="/pagedev/static/dev/js/lib/echarts.js"></script>
+	<script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
+	<script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
+	<script type="text/javascript" src="/pagedev/static/dev/js/public_opinion/bd_indices.js"></script>
 </div>
 </body>
 </html>
