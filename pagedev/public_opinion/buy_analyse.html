@@ -39,10 +39,10 @@
 							</tr>
 						</table>
 						<!-- 购买咨询问题类型开始 -->
-						<div id="queClassChart"></div>
+						<div id="queClassChart" style="height:250px;"></div>
 						<!-- 购买咨询问题类型结束 -->
 						<!-- 咨询手机版本图表开始 -->
-						<div id="versionChart"></div>
+						<div id="versionChart" style="height:250px;"></div>
 						<!-- 咨询手机版本图表结束 -->
 						<table class="b_table">
 							<tr>
@@ -68,8 +68,52 @@
 						</table>
 					</div>
 				</div>
-				
-				
+			</div>
+
+			<div class="tabCont">
+				<div class="opinionList">
+					<div class="opinionItem">
+						<table class="dataTable">
+							<tr>
+								<td>咨询数:1,000</td>
+							</tr>
+							<tr>
+								<td>回复数:900</td>
+							</tr>
+							<tr>
+								<td>回复间隔时间(S):100</td>
+							</tr>
+						</table>
+						<!-- 购买咨询问题类型开始 -->
+						<div id="yQueClassChart"></div>
+						<!-- 购买咨询问题类型结束 -->
+						<!-- 咨询手机版本图表开始 -->
+						<div id="yVersionChart"></div>
+						<!-- 咨询手机版本图表结束 -->
+						<table class="b_table">
+							<tr>
+								<td><span>手机版本</span></td>
+								<td><span>咨询数</span></td>
+								<td><span>回复数</span></td>
+								<td><span>商品咨询</span></td>
+								<td><span>支付问题</span></td>
+								<td><span class="beyond">发票及保修<br/>问题</span></td>
+								<td><span class="beyond">促销及赠品<br/>问题</span></td>
+								<td><span class="beyond">库存及配送<br/>问题</span></td>
+							</tr>
+							<tr>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+								<td><span>--</span></td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -77,15 +121,15 @@
 	<div class="tabWrap">
 		<ul class="tabNav trendTab">
 			<li class="tabTitle active">近7天评价趋势</li>
-			<li class="tabTitle">近30天趋势</li>
+			<li class="tabTitle trend30">近30天趋势</li>
 			<li class="tabTitle">明细</li>
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont active">
-				<div id="evaluate7Chart"></div>
+				<div id="evaluate7Chart" style="height:150px;"></div>
 			</div>
 			<div class="tabCont">
-				<div id="evaluate30Chart"></div>
+				<div id="evaluate30Chart" style="height:150px;"></div>
 			</div>
 			<div class="tabCont">
 				<h3 class="flowDetailTitle">2015-06-10到2015-06-17店铺流量明细</h3>
@@ -123,334 +167,9 @@
 	<!-- 底部导航结束 -->
 </div>
 <script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/lib/echarts.js"></script>
 <script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
 <script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
-<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
-<script type="text/javascript" >
- // 路径配置
-require.config({
-    paths: {
-        echarts: 'http://echarts.baidu.com/build/dist'
-    }
-});
-$().ready(function(){
-	require([
-        'echarts',
-        'echarts/chart/bar', // 使用柱状图就加载bar模块，按需加载
-        'echarts/chart/pie', //
-        'echarts/chart/map',
-        'echarts/chart/line'
-    ],function (ec) {
-        // 基于准备好的dom，初始化echarts图表
-        var myChart = ec.init(document.getElementById('main')); 
-        
-        var option = {
-            tooltip: {
-                show: true
-            },
-            legend: {
-                data:['pv']
-            },
-            xAxis : [
-                {
-                    type : 'category',
-                    data : ["2015/06/03","2015/06/04","2015/06/04","2015/06/05","2015/06/06","2015/06/07","2015/06/08","2015/06/09"]
-                }
-            ],
-            yAxis : [
-                {
-                    type : 'value'
-                }
-            ],
-            series : [
-                {
-                    "name":"pv",
-                    "type":"bar",
-                    "data":[30000, 40000, 50000, 38000, 37000, 48000,36000,35000]
-                }
-            ]
-        };
-        myChart.setOption(option); 
-        //环状chart图
-        var pieChart=ec.init(document.getElementById('cyclicMain')); 
-        var option = {
-		    tooltip : {
-		        trigger: 'item',
-		        formatter: "{a} <br/>{b} : {c} ({d}%)"
-		    },
-		    legend: {
-		        orient : 'vertical',
-		        x : 'left',
-		        data:['直接访问','邮件营销','联盟广告','视频广告','搜索引擎']
-		    },
-		    toolbox: {
-		        show : true,
-		        feature : {
-		            mark : {show: true},
-		            dataView : {show: true, readOnly: false},
-		            magicType : {
-		                show: true, 
-		                type: ['pie', 'funnel'],
-		                option: {
-		                    funnel: {
-		                        x: '25%',
-		                        width: '50%',
-		                        funnelAlign: 'center',
-		                        max: 1548
-		                    }
-		                }
-		            },
-		            restore : {show: true},
-		            saveAsImage : {show: true}
-		        }
-		    },
-		    calculable : true,
-		    series : [
-		        {
-		            name:'访问来源',
-		            type:'pie',
-		            radius : ['50%', '70%'],
-		            itemStyle : {
-		                normal : {
-		                    label : {
-		                        show : false
-		                    },
-		                    labelLine : {
-		                        show : false
-		                    }
-		                },
-		                emphasis : {
-		                    label : {
-		                        show : true,
-		                        position : 'center',
-		                        textStyle : {
-		                            fontSize : '30',
-		                            fontWeight : 'bold'
-		                        }
-		                    }
-		                }
-		            },
-		            data:[
-		                {value:335, name:'直接访问'},
-		                {value:310, name:'邮件营销'},
-		                {value:234, name:'联盟广告'},
-		                {value:135, name:'视频广告'},
-		                {value:1548, name:'搜索引擎'}
-		            ]
-		        }
-		    ]
-		};
-        pieChart.setOption(option);
-        //地图
-        var mapChart=ec.init(document.getElementById('mapMain'));
-        var option = {
-		    title : {
-		        text: 'iphone销量',
-		        subtext: '纯属虚构',
-		        x:'center'
-		    },
-		    tooltip : {
-		        trigger: 'item'
-		    },
-		    legend: {
-		        orient: 'vertical',
-		        x:'left',
-		        data:['iphone3','iphone4','iphone5']
-		    },
-		    dataRange: {
-		        min: 0,
-		        max: 2500,
-		        x: 'left',
-		        y: 'bottom',
-		        text:['高','低'],           // 文本，默认为数值文本
-		        calculable : true
-		    },
-		    toolbox: {
-		        show: true,
-		        orient : 'vertical',
-		        x: 'right',
-		        y: 'center',
-		        feature : {
-		            mark : {show: true},
-		            dataView : {show: true, readOnly: false},
-		            restore : {show: true},
-		            saveAsImage : {show: true}
-		        }
-		    },
-		    roamController: {
-		        show: true,
-		        x: 'right',
-		        mapTypeControl: {
-		            'china': true
-		        }
-		    },
-		    series : [
-		        {
-		            name: 'iphone3',
-		            type: 'map',
-		            mapType: 'china',
-		            roam: false,
-		            itemStyle:{
-		                normal:{label:{show:true}},
-		                emphasis:{label:{show:true}}
-		            },
-		            data:[
-		                {name: '北京',value: Math.round(Math.random()*1000)},
-		                {name: '天津',value: Math.round(Math.random()*1000)},
-		                {name: '上海',value: Math.round(Math.random()*1000)},
-		                {name: '重庆',value: Math.round(Math.random()*1000)},
-		                {name: '河北',value: Math.round(Math.random()*1000)},
-		                {name: '河南',value: Math.round(Math.random()*1000)},
-		                {name: '云南',value: Math.round(Math.random()*1000)},
-		                {name: '辽宁',value: Math.round(Math.random()*1000)},
-		                {name: '黑龙江',value: Math.round(Math.random()*1000)},
-		                {name: '湖南',value: Math.round(Math.random()*1000)},
-		                {name: '安徽',value: Math.round(Math.random()*1000)},
-		                {name: '山东',value: Math.round(Math.random()*1000)},
-		                {name: '新疆',value: Math.round(Math.random()*1000)},
-		                {name: '江苏',value: Math.round(Math.random()*1000)},
-		                {name: '浙江',value: Math.round(Math.random()*1000)},
-		                {name: '江西',value: Math.round(Math.random()*1000)},
-		                {name: '湖北',value: Math.round(Math.random()*1000)},
-		                {name: '广西',value: Math.round(Math.random()*1000)},
-		                {name: '甘肃',value: Math.round(Math.random()*1000)},
-		                {name: '山西',value: Math.round(Math.random()*1000)},
-		                {name: '内蒙古',value: Math.round(Math.random()*1000)},
-		                {name: '陕西',value: Math.round(Math.random()*1000)},
-		                {name: '吉林',value: Math.round(Math.random()*1000)},
-		                {name: '福建',value: Math.round(Math.random()*1000)},
-		                {name: '贵州',value: Math.round(Math.random()*1000)},
-		                {name: '广东',value: Math.round(Math.random()*1000)},
-		                {name: '青海',value: Math.round(Math.random()*1000)},
-		                {name: '西藏',value: Math.round(Math.random()*1000)},
-		                {name: '四川',value: Math.round(Math.random()*1000)},
-		                {name: '宁夏',value: Math.round(Math.random()*1000)},
-		                {name: '海南',value: Math.round(Math.random()*1000)},
-		                {name: '台湾',value: Math.round(Math.random()*1000)},
-		                {name: '香港',value: Math.round(Math.random()*1000)},
-		                {name: '澳门',value: Math.round(Math.random()*1000)}
-		            ]
-		        },
-		        {
-		            name: 'iphone4',
-		            type: 'map',
-		            mapType: 'china',
-		            itemStyle:{
-		                normal:{label:{show:true}},
-		                emphasis:{label:{show:true}}
-		            },
-		            data:[
-		                {name: '北京',value: Math.round(Math.random()*1000)},
-		                {name: '天津',value: Math.round(Math.random()*1000)},
-		                {name: '上海',value: Math.round(Math.random()*1000)},
-		                {name: '重庆',value: Math.round(Math.random()*1000)},
-		                {name: '河北',value: Math.round(Math.random()*1000)},
-		                {name: '安徽',value: Math.round(Math.random()*1000)},
-		                {name: '新疆',value: Math.round(Math.random()*1000)},
-		                {name: '浙江',value: Math.round(Math.random()*1000)},
-		                {name: '江西',value: Math.round(Math.random()*1000)},
-		                {name: '山西',value: Math.round(Math.random()*1000)},
-		                {name: '内蒙古',value: Math.round(Math.random()*1000)},
-		                {name: '吉林',value: Math.round(Math.random()*1000)},
-		                {name: '福建',value: Math.round(Math.random()*1000)},
-		                {name: '广东',value: Math.round(Math.random()*1000)},
-		                {name: '西藏',value: Math.round(Math.random()*1000)},
-		                {name: '四川',value: Math.round(Math.random()*1000)},
-		                {name: '宁夏',value: Math.round(Math.random()*1000)},
-		                {name: '香港',value: Math.round(Math.random()*1000)},
-		                {name: '澳门',value: Math.round(Math.random()*1000)}
-		            ]
-		        },
-		        {
-		            name: 'iphone5',
-		            type: 'map',
-		            mapType: 'china',
-		            itemStyle:{
-		                normal:{label:{show:true}},
-		                emphasis:{label:{show:true}}
-		            },
-		            data:[
-		                {name: '北京',value: Math.round(Math.random()*1000)},
-		                {name: '天津',value: Math.round(Math.random()*1000)},
-		                {name: '上海',value: Math.round(Math.random()*1000)},
-		                {name: '广东',value: Math.round(Math.random()*1000)},
-		                {name: '台湾',value: Math.round(Math.random()*1000)},
-		                {name: '香港',value: Math.round(Math.random()*1000)},
-		                {name: '澳门',value: Math.round(Math.random()*1000)}
-		            ]
-		        }
-		    ]
-		};
-		mapChart.setOption(option);
-		//曲线图和柱状图
-		var linebarChart=ec.init(document.getElementById("linebarChart"));
-		var option = {
-		    tooltip : {
-		        trigger: 'axis'
-		    },
-		    toolbox: {
-		        show : true,
-		        feature : {
-		            mark : {show: true},
-		            dataView : {show: true, readOnly: false},
-		            magicType: {show: true, type: ['line', 'bar']},
-		            restore : {show: true},
-		            saveAsImage : {show: true}
-		        }
-		    },
-		    calculable : true,
-		    legend: {
-		        data:['蒸发量','降水量','平均温度']
-		    },
-		    xAxis : [
-		        {
-		            type : 'category',
-		            data : ['1月','2月','3月','4月','5月','6月','7月','8月','9月','10月','11月','12月']
-		        }
-		    ],
-		    yAxis : [
-		        {
-		            type : 'value',
-		            name : '水量',
-		            axisLabel : {
-		                formatter: '{value} ml'
-		            }
-		        },
-		        {
-		            type : 'value',
-		            name : '温度',
-		            axisLabel : {
-		                formatter: '{value} °C'
-		            }
-		        }
-		    ],
-		    series : [
-
-		        {
-		            name:'蒸发量',
-		            type:'bar',
-		            data:[2.0, 4.9, 7.0, 23.2, 25.6, 76.7, 135.6, 162.2, 32.6, 20.0, 6.4, 3.3]
-		        },
-		        {
-		            name:'降水量',
-		            type:'bar',
-		            data:[2.6, 5.9, 9.0, 26.4, 28.7, 70.7, 175.6, 182.2, 48.7, 18.8, 6.0, 2.3]
-		        },
-		        {
-		            name:'平均温度',
-		            type:'line',
-		            yAxisIndex: 1,
-		            data:[2.0, 2.2, 3.3, 4.5, 6.3, 10.2, 20.3, 23.4, 23.0, 16.5, 12.0, 6.2]
-		        }
-		    ]
-		};
-		linebarChart.setOption(option);
-                    
-                    
-
-    });
-});
-
-</script>
+<script type="text/javascript" src="/pagedev/static/dev/js/public_opinion/buy_analyse.js"></script>
 </body>
 </html>

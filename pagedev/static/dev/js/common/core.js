@@ -266,6 +266,7 @@ LM.Core={
 }
 require.config({
     paths: {
-        echarts: 'http://echarts.baidu.com/build/dist'
+        // echarts: 'http://echarts.baidu.com/build/dist'
+        echarts:'/pagedev/static/dev/js/lib/'
     }
 });
