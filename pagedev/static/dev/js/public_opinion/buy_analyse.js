@@ -152,13 +152,26 @@ BuyAnalyse.prototype={
 	//初始化事件绑定
 	initBind:function(){
 		var _that=this;
+
 		$(".trend30").click(function(){
 			if(!$(this).hasClass("data")){
 				LM.Core.initEchart(function(ec){
 					_that.trend30=ec.init(document.getElementById("evaluate30Chart"));//30天趋势
 					_that.trendChart(_that.trend30);
-					$(this).addClass("data");
 				});
+				$(this).addClass("data");
+			}
+		});
+		//昨日新增click事件绑定
+		$(".yesterday").click(function(){
+			if(!$(this).hasClass("data")){
+				LM.Core.initEchart(function(ec){
+					_that.yQuesPie=ec.init(document.getElementById("yQueClassChart"));//30天趋势
+					_that.yVersionPie=ec.init(document.getElementById("yVersionChart"));
+					_that.queClassPie(_that.yQuesPie);
+					_that.queClassPie(_that.yVersionPie,"version");
+				});
+				$(this).addClass("data");
 			}
 		});
 	},
