@@ -11,5 +11,5 @@ update:;*/
 @import url("../common/main_list.css");
 /*导入公共的main_list.css结束*/
 /*导入购买咨询分析样式开始*/
-@import url("../public_opinion/bug_analyse_style.css");
+@import url("../public_opinion/buy_analyse.css");
 /*导入购买咨询分析样式结束*/
