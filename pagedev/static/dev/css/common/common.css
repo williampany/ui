@@ -25,6 +25,7 @@
 .tabWrap .tabContWrap{}
 .tabWrap .tabContWrap .tabCont{display: none;}
 .tabWrap .tabContWrap .tabCont.active{display: block;}
+.tabWrap .tabTitle .beyond{display:inline-block;line-height:15px;padding-top:5px; }
 /*tab部分结束*/
 
 /*漏斗转换部分开始*/

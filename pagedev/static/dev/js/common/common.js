@@ -20,6 +20,11 @@ Common.prototype={
 			$(this).addClass("active");
 			_cont.addClass("active");
 		});
+		//返回按钮click事件绑定
+		$(".header .back").click(function(e){
+			e.preventDefault();
+			history.back();
+		});
 	}
 }
 var common=new Common();

@@ -1,0 +1,7 @@
+.tabWrap .tabNav{line-height: 40px;height: 40px;}
+.tabWrap .tabNav .tabTitle{height: 40px;}
+.tabWrap .tabNav .tabTitle:after{height: 40px;}
+.monitorTitles .tabTitle{width: 33.33%;}
+.opinionList .opinionItem{border-bottom:none;}
+.opinionList{padding-bottom: 0px;}
+.noteOCWrap{margin-bottom: 50px;}
