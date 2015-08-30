@@ -4,7 +4,7 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 	<title>京东数据罗盘分析</title>
-	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/pgroup_analyse_style.css">
+	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/jd_compass_style.css">
 </head>
 <body>
 <div class="jd_compassWarp">
@@ -14,7 +14,7 @@
 	</div>
 	<!-- 头部结束 -->
 	<div class="tabWrap">
-		<ul class="tabNav">
+		<ul class="tabNav jdCompass">
 			<li class="tabTitle active">昨日</li>
 			<li class="tabTitle">近7日</li>
 			<li class="tabTitle">近30日</li>
@@ -22,55 +22,68 @@
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont active">
-				<table>
-					<tr>
-						<td>行业关注指数:1,000</td>
-						<td>行业成交指数:900</td>
-					</tr>
-					<tr>
-						<td>搜索点击指数:900</td>
-						<td>客单价:100</td>
-					</tr>
-				</table>
+				<div class="opinionList">
+					<!-- 评价总评预览开始 -->
+					<div class="opinionItem">
+						<table class="dataTable">
+							<tr>
+								<td>行业关注指数:1,000</td>
+								<td>行业成交指数:900</td>
+							</tr>
+							<tr>
+								<td>搜索点击指数:900</td>
+								<td>客单价:100</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 			<div class="tabCont ">
-				<table>
-					<tr>
-						<td>行业关注指数:1,000</td>
-						<td>行业成交指数:900</td>
-					</tr>
-					<tr>
-						<td>搜索点击指数:900</td>
-						<td>客单价:100</td>
-					</tr>
-				</table>
+				<div class="opinionList">
+					<div class="opinionItem">
+						<table class="dataTable">
+							<tr>
+								<td>行业关注指数:1,000</td>
+								<td>行业成交指数:900</td>
+							</tr>
+							<tr>
+								<td>搜索点击指数:900</td>
+								<td>客单价:100</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 			<div class="tabCont ">
-				<table>
-					<tr>
-						<td>行业关注指数:1,000</td>
-						<td>行业成交指数:900</td>
-					</tr>
-					<tr>
-						<td>搜索点击指数:900</td>
-						<td>客单价:100</td>
-					</tr>
-				</table>
+				<div class="opinionList">
+					<div class="opinionItem">
+						<table class="dataTable">
+							<tr>
+								<td>行业关注指数:1,000</td>
+								<td>行业成交指数:900</td>
+							</tr>
+							<tr>
+								<td>搜索点击指数:900</td>
+								<td>客单价:100</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
 	<!-- 趋势tab开始 -->
 	<div class="tabWrap">
-		<ul class="tabNav">
+		<ul class="tabNav trendTab">
 			<li class="tabTitle active">趋势</li>
 			<li class="tabTitle">明细</li>
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont">
-				<div id="chart"></div>
+				<div id="trendChart"></div>
 			</div>
 			<div class="tabCont">
-				<table>
+				<table class="flowDetailTable">
 					<tr>
 						<td><span>序号</span></td>
 						<td><span>日期</span></td>
@@ -106,6 +119,11 @@
 		</ul>
 	</div>
 	<!-- 底部导航结束 -->
+<script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/public_opinion/jd_compass.js"></script>
 </div>
 </body>
 </html>
