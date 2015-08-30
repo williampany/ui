@@ -4,38 +4,49 @@
 	<meta charset="utf-8"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no">
 	<title>行业销量排名</title>
-	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/pgroup_analyse_style.css">
+	<link rel="stylesheet" type="text/css" href="/pagedev/static/dev/css/public_opinion/jd_compass_style.css">
 </head>
 <body>
 <div class="jd_compassWarp">
 	<!-- 头部开始 -->
 	<div class="header">
+		<a href="#" class="l_link">罗盘行业分析</a>
 		行业销量排名
 	</div>
 	<!-- 头部结束 -->
 	<div class="tabWrap">
-		<ul class="tabNav">
+		<ul class="tabNav saleTab">
 			<li class="tabTitle active">昨日</li>
 			<li class="tabTitle">筛选</li>
 		</ul>
 		<div class="tabContWrap">
+
 			<div class="tabCont active">
-				<table>
-					<tr>
-						<td>排名</td>
-						<td>商品名称</td>
-						<td>SKU</td>
-					</tr>
-					<tr>
-						<td>--</td>
-						<td>--</td>
-						<td>--</td>
-					</tr>
-				</table>
+				<div class="opinionList">
+					<div class="opinionItem">
+						<div class="opinionTitle">
+							<span class="name">
+								T50商品
+							</span>
+						</div>
+						<table class="dataTable">
+							<tr>
+								<td>排名</td>
+								<td>商品名称</td>
+								<td>SKU</td>
+							</tr>
+							<tr>
+								<td>--</td>
+								<td>--</td>
+								<td>--</td>
+							</tr>
+						</table>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
-	<a class="blockLink" href="">关键词排名</a>
+	<a class="blockLink" href="">关键词排名<span class="itemLink"></span></a>
 	<!-- 底部导航开始 -->
 	<div class="b_nav">
 		<ul class="clearfix">
@@ -51,6 +62,11 @@
 		</ul>
 	</div>
 	<!-- 底部导航结束 -->
+	<script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/public_opinion/jd_sale.js"></script>
 </div>
 </body>
 </html>

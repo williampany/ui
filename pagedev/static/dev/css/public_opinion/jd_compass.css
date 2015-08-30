@@ -2,3 +2,7 @@
 .opinionList .opinionItem{padding: 0px 10px 10px;}
 .jdCompass .tabTitle{width: 25%;}
 .trendTab .tabTitle{width: 50%;}
+.jd_compassWarp .opinionItem{padding-top: 10px;}
+.saleTab .tabTitle{width: 50%;}
+.keywordsTab .tabTitle{width: 50%;}
+.keyworkLink{margin-bottom: 50px;margin-top: -1px;}

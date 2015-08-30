@@ -14,8 +14,8 @@
 	</div>
 	<!-- 头部结束 -->
 	<div class="topWrap">
-		<div id="pgroupChart"></div>
-		<table>
+		<div id="pgroupChart" style="height:250px;"></div>
+		<table class="flowDetailTable">
 			<tr>
 				<td><span>圈子</span></td>
 				<td><span>粉丝总数</span></td>
@@ -29,39 +29,57 @@
 		</table>
 	</div>
 	<div class="tabWrap">
-		<ul class="tabNav">
+		<ul class="tabNav trendTab">
 			<li class="tabTitle active">近7天评价趋势</li>
-			<li class="tabTitle">近30天趋势</li>
+			<li class="tabTitle trend30">近30天趋势</li>
 			<li class="tabTitle">明细</li>
 		</ul>
 		<div class="tabContWrap">
 			<div class="tabCont active">
-				<div id="evaluate7Chart1"></div>
-				<div id="evaluate7Chart2"></div>
+				<div id="evaluate7Chart1" style="height:250px;"></div>
+				<div id="evaluate7Chart2" style="height:250px;"></div>
 			</div>
 			<div class="tabCont">
-				<div id="evaluate30Chart1"></div>
-				<div id="evaluate30Chart2"></div>
+				<div id="evaluate30Chart3" style="height:250px;"></div>
+				<div id="evaluate30Chart4" style="height:250px;"></div>
 			</div>
 			<div class="tabCont">
-				<table>
+				<h3 class="flowDetailTitle">2015-06-10到2015-06-17乐檬圈子明细</h3>
+				<table class="flowDetailTable">
 					<tr>
 						<td><span>序号</span></td>
 						<td><span>日期</span></td>
 						<td><span>全版本名称</span></td>
 					</tr>
 					<tr>
-						<tr>
-							<td><span>--</span></td>
-							<td><span>--</span></td>
-							<td><span>--</span></td>
-						</tr>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
+						<td><span>--</span></td>
 					</tr>
 				</table>
 			</div>
 		</div>
 	</div>
-	
+	<!-- 底部导航开始 -->
+	<div class="b_nav">
+		<ul class="clearfix">
+			<li class="tab_item">
+				流量销量分析
+			</li>
+			<li class="tab_item active">
+				舆情监控分析
+			</li>
+			<li class="tab_item loginOut">
+				退出
+			</li>
+		</ul>
+	</div>
+	<!-- 底部导航结束 -->
 </div>
+<script type="text/javascript" src="/pagedev/static/dev/js/lib/jquery.min.js"></script>
+<script type="text/javascript" src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/core.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/common/common.js"></script>
+<script type="text/javascript" src="/pagedev/static/dev/js/public_opinion/pgroup_analyse.js"></script>
 </body>
 </html>

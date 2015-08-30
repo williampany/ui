@@ -52,7 +52,8 @@
 .flowDetailTable td span{font-size: 0.8em;-webkit-transform:scale(0.8);display: block;}
 .flowDetailTable{margin-bottom: 25px;}
 
-.blockLink{border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8d8d8d;line-height: 54px;height: 54px;font-size: 16px;display: block;color: #444444;}
+.blockLink{border-top: 1px solid #8d8d8d;border-bottom: 1px solid #8d8d8d;line-height: 54px;height: 54px;font-size: 16px;display: block;color: #444444;position: relative;margin-top: -1px;}
+.itemLink{position:absolute;background: url("../../img/common/link_r.png") scroll center center;width: 13.5px;height: 29px;top:50%;right: 10px;margin-top: -14.5px;background-size: 13.5px 29px;}
 table{border-collapse:collapse;}
 table td{text-align: center;border:1px solid #ccc;}
 .pageTitle{line-height: 30px;height: 30px;font-size: 16px;color: #000;text-align: center;}
