@@ -23,20 +23,15 @@ Eanalyze.prototype={
 	        // 基于准备好的dom，初始化echarts图表
 	        var myChart = ec.init(document.getElementById('main')); 
 	        var option = {
+	        	grid:{
+	        		x:35,
+	        		y:45,
+	        		x2:35,
+	        		y2:5
+	        	},
 			    tooltip : {
 			        trigger: 'axis'
 			    },
-			    toolbox: {
-			        show : true,
-			        feature : {
-			            mark : {show: true},
-			            dataView : {show: true, readOnly: false},
-			            magicType: {show: true, type: ['line', 'bar']},
-			            restore : {show: true},
-			            saveAsImage : {show: true}
-			        }
-			    },
-			    calculable : true,
 			    legend: {
 			        data:['好评数','中评数','差评数',"好评率"]
 			    },
@@ -51,7 +46,9 @@ Eanalyze.prototype={
 			            type : 'value',
 			            name : '',
 			            axisLabel : {
-			                formatter: '{value}'
+			                formatter: function(value){
+			                	return value/1000+"k";
+			                }
 			            }
 			        },
 			        {
@@ -63,7 +60,6 @@ Eanalyze.prototype={
 			        }
 			    ],
 			    series : [
-
 			        {
 			            name:'好评数',
 			            type:'bar',

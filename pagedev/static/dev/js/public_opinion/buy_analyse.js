@@ -74,16 +74,6 @@ var BuyAnalyse=function(){
 	    legend: {
 	        data:['邮件营销','联盟广告','视频广告','直接访问','搜索引擎']
 	    },
-	    // toolbox: {
-	    //     show : true,
-	    //     feature : {
-	    //         mark : {show: true},
-	    //         dataView : {show: true, readOnly: false},
-	    //         magicType : {show: true, type: ['line', 'bar', 'stack', 'tiled']},
-	    //         restore : {show: true},
-	    //         saveAsImage : {show: true}
-	    //     }
-	    // },
 	    calculable : true,
 	    xAxis : [
 	        {

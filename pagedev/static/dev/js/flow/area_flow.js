@@ -21,13 +21,13 @@ var AreaFlow=function(){
 	        text:['高','低'],           // 文本，默认为数值文本
 	        calculable : true
 	    },
-	    roamController: {
-	        show: true,
-	        x: 'right',
-	        mapTypeControl: {
-	            'china': true
-	        }
-	    },
+	    // roamController: {
+	    //     show: true,
+	    //     x: 'right',
+	    //     mapTypeControl: {
+	    //         'china': true
+	    //     }
+	    // },
 	    series : [
 	        {
 	            name: 'iphone3',

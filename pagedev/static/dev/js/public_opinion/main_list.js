@@ -11,7 +11,14 @@ MainList.prototype={
 	},
 	//获取舆情监控数据
 	getDataList:function(){
-
+		var obj={};
+		obj.url="";
+		obj.params={};
+		obj.success=function(data){
+			var data={};
+		};
+		obj.error=function(){};
+		LM.Core.ajax(obj);
 	}
 }
 var mainList=new MainList();

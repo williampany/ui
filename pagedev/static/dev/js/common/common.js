@@ -25,9 +25,11 @@ Common.prototype={
 			e.preventDefault();
 			history.back();
 		});
+
 	},
 	//打印底部导航
 	printBottomNav:function(){
+		var _that=this;
 		var _nav="<div class=\"b_nav\"><ul class=\"clearfix\"><li class=\"tab_item flow\">流量销量分析</li><li class=\"tab_item public_opinion\">舆情监控分析</li><li class=\"tab_item loginOut\">退出</li></ul></div>"
 		$("body").append(_nav);
 		var _loaction=window.location.href;
@@ -44,6 +46,18 @@ Common.prototype={
 		$(".b_nav .flow").click(function(){
 			window.location.href="/pagedev/flow/main_list.html";
 		});
+		// 底部退出连接click事件绑定
+		$(".b_nav .loginOut").click(function(e){
+			if(confirm("确认要退出？")){
+				//退出
+				alert("已退出");
+				_that.loginOut();
+			}
+		});
+	},
+	//退出方法
+	loginOut:function(){
+		//清除cookie
 	}
 }
 var common=new Common();
