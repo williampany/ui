@@ -250,6 +250,11 @@ LM.Core={
 		if (r != null) return unescape(r[2]); return "";
 	},
 	initEchart:function(callback){
+		require.config({
+		    paths: {
+		        echarts:'/pagedev/static/dev/js/lib/'
+		    }
+		});
 		// 使用
 		require([
 	        'echarts',
@@ -264,8 +269,4 @@ LM.Core={
 	    });
 	}
 }
-require.config({
-    paths: {
-        echarts:'/pagedev/static/dev/js/lib/'
-    }
-});
+

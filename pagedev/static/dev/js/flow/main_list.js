@@ -17,7 +17,9 @@ MainList.prototype={
 		var obj={};
 		obj.url="";
 		obj.params={};
-		obj.success=function(){};
+		obj.success=function(data){
+			
+		};
 		obj.error=function(){};
 		LM.Core.ajax(obj);
 	}

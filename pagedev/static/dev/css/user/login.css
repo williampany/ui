@@ -1,7 +1,7 @@
 body{background: url("../../img/user/login_bg.jpg") no-repeat scroll center 0px;}
 .loginWrap{max-width: 640px;top:0px;left: 0px;margin: 0px auto;display: block;}
-.loginWrap .userIcon{background: url("../../img/user/user_icon.png") no-repeat scroll center bottom;height: 112px;background-size: 72px 72px;display: block;margin-bottom: 22px;}
-.loginBox{background: url("../../img/user/login_wrap.png") no-repeat scroll center center;padding: 7.5px 12.5px;overflow: hidden;}
+.loginWrap .userIcon{background: url("../../img/user/user_icon.png") no-repeat scroll center bottom;height: 130px;background-size: 90px 90px;display: block;margin-bottom: 22px;}
+.loginBox{background: url("../../img/user/login_wrap.png") no-repeat scroll center center;padding: 15px 12.5px;overflow: hidden;}
 .lableWrap{position: relative;border:1px solid #fff;border-radius: 20px;height: 40px;margin-bottom: 17.5px;}
 .lableWrap .userName{background: url("../../img/user/user_name.png") no-repeat scroll center center;width: 22px;height: 28px;position: absolute;top:5px;left: 26px;background-size: 22px 28px;}
 .lableWrap .pwd{background: url("../../img/user/pwd.png") no-repeat scroll center center;width: 22px;height: 28px;position: absolute;top:5px;left: 26px;background-size: 22px 28px;}
@@ -12,3 +12,12 @@ body{background: url("../../img/user/login_bg.jpg") no-repeat scroll center 0px;
 .loginTheme .logoWrap{width: 115px;height: 115px;position: absolute;left: 50%;margin-left: -57.5px;margin-top: -57.5px;top: 50%;}
 .loginTheme .logoWrap img{width: 100%;}
 .loginTheme .company_title{position: absolute;text-align: center;color: #fff;font-size: 16px;width: 100%;bottom: -20px;}
+@media screen and (min-height: 480px){
+	.loginWrap .userIcon{height: 160px;background-size: 100px 100px;}
+}
+@media screen and (min-height: 580px){
+	.loginWrap .userIcon{height: 220px;background-size: 130px 130px;}
+	.loginBox{padding: 25px 15px;}
+	.submitBtn{line-height: 40px;border-radius: 20px;height: 40px;font-size: 20px;}
+
+}

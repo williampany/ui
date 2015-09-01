@@ -9,7 +9,11 @@ caption,th{ text-align:left}
 h1,h2,h3,h4,h5,h6{ font-size:100%; font-weight:normal;}
 q:before,q:after{ content:"";}
 addr,acronym{ border:0;}
-
+::-webkit-input-placeholder { /* WebKit browsers */color:#f9f9f9;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */color:#f9f9f9;}
+::-moz-placeholder { /* Mozilla Firefox 19+ */color:#f9f9f9;}
+:-ms-input-placeholder { /* Internet Explorer 10+ */color:#f9f9f9;}
+input{outline: none;}
 /*文字排版*/
 .f12{ font-size:12px;}
 .f13{ font-size:13px;}
