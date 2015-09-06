@@ -19,6 +19,7 @@ MainList.prototype={
 		obj.params={};
 		obj.success=function(data){
 			
+
 		};
 		obj.error=function(){};
 		LM.Core.ajax(obj);

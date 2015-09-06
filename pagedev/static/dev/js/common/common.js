@@ -48,7 +48,7 @@ Common.prototype={
 		});
 		// 底部退出连接click事件绑定
 		$(".b_nav .loginOut").click(function(e){
-			if(confirm("确认要退出？")){
+			if(confirm("是否退出系统？")){
 				//退出
 				alert("已退出");
 				_that.loginOut();
